@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="isansbold.ttf">
+            <string>IRANSansMobileFaNum-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Authentication View Controller-->
+        <scene sceneID="ubC-fc-Qs4">
+            <objects>
+                <viewController storyboardIdentifier="AuthenticationViewControllerID" id="caS-mU-qff" customClass="AuthenticationViewController" customModule="CHIREH_BMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WyN-it-Obc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Kr-vc-Kgk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="JDO-dD-JWc">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcn-2q-fxN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXQ-a4-2OR" userLabel="Login View">
+                                <rect key="frame" x="48" y="200.5" width="279" height="266"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOE-3J-azF" customClass="LanguageLabel" customModule="CHIREH_BMS" customModuleProvider="target">
+                                        <rect key="frame" x="114" y="32" width="50" height="30.5"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="19"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="enText" value="Login To Chireh BMS"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="faText" value="ورود به چیره بی ام اس"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GZ6-O0-NOA" customClass="InsetTextField" customModule="CHIREH_BMS" customModuleProvider="target">
+                                        <rect key="frame" x="14" y="70.5" width="249" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="DgQ-jU-I8o"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="enPlaceholder" value="Enter your password"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="faPlaceholder" value="پسور را وارد کنید"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7l-Nv-weP" userLabel="Separator View">
+                                        <rect key="frame" x="14" y="103.5" width="249" height="1"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="249" id="Fj5-4L-juM"/>
+                                            <constraint firstAttribute="height" constant="1" id="Mxm-oc-lVe"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRZ-dZ-JJE" customClass="RoundedButton" customModule="CHIREH_BMS" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="120.5" width="249" height="36"/>
+                                        <color key="backgroundColor" red="1" green="0.78247391249999998" blue="0.065811302720000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="AiE-cR-Txh"/>
+                                            <constraint firstAttribute="width" constant="249" id="ZJP-CD-VbO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="17"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="faText" value="ورود"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="enText" value="Sign In"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="agreeButtonTapped:" destination="caS-mU-qff" eventType="touchUpInside" id="2B1-Vy-ZzW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.9918423694779116" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="GZ6-O0-NOA" firstAttribute="centerX" secondItem="DOE-3J-azF" secondAttribute="centerX" constant="-0.5" id="3eF-d0-cpb"/>
+                                    <constraint firstAttribute="width" constant="279" id="Amt-eY-HoB"/>
+                                    <constraint firstAttribute="trailing" secondItem="GZ6-O0-NOA" secondAttribute="trailing" constant="16" id="D0Z-h2-G6R"/>
+                                    <constraint firstItem="DOE-3J-azF" firstAttribute="top" secondItem="tXQ-a4-2OR" secondAttribute="top" constant="32" id="HpM-h7-2M9"/>
+                                    <constraint firstItem="GZ6-O0-NOA" firstAttribute="centerX" secondItem="y7l-Nv-weP" secondAttribute="centerX" id="Ikl-Ba-VKY"/>
+                                    <constraint firstItem="DRZ-dZ-JJE" firstAttribute="centerX" secondItem="tXQ-a4-2OR" secondAttribute="centerX" id="JcK-Ez-kw8"/>
+                                    <constraint firstAttribute="height" constant="266" id="LrR-in-WEp"/>
+                                    <constraint firstItem="DRZ-dZ-JJE" firstAttribute="top" secondItem="y7l-Nv-weP" secondAttribute="bottom" constant="16" id="dzy-0q-EZM"/>
+                                    <constraint firstItem="GZ6-O0-NOA" firstAttribute="top" secondItem="DOE-3J-azF" secondAttribute="bottom" constant="8" id="fk2-as-NYd"/>
+                                    <constraint firstItem="GZ6-O0-NOA" firstAttribute="leading" secondItem="tXQ-a4-2OR" secondAttribute="leading" constant="14" id="vsH-m6-ZeF"/>
+                                    <constraint firstItem="y7l-Nv-weP" firstAttribute="top" secondItem="GZ6-O0-NOA" secondAttribute="bottom" constant="3" id="x3E-35-qpy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tcn-2q-fxN" secondAttribute="bottom" id="5WQ-ho-Rzw"/>
+                            <constraint firstItem="tXQ-a4-2OR" firstAttribute="centerX" secondItem="WyN-it-Obc" secondAttribute="centerX" id="7Eg-jH-nfv"/>
+                            <constraint firstItem="7Kr-vc-Kgk" firstAttribute="top" secondItem="WyN-it-Obc" secondAttribute="top" id="CkK-FW-3mf"/>
+                            <constraint firstItem="7Kr-vc-Kgk" firstAttribute="leading" secondItem="rYC-Be-xMA" secondAttribute="leading" id="EP8-BT-BC2"/>
+                            <constraint firstItem="tcn-2q-fxN" firstAttribute="trailing" secondItem="rYC-Be-xMA" secondAttribute="trailing" id="EYq-nd-dzG"/>
+                            <constraint firstItem="tcn-2q-fxN" firstAttribute="leading" secondItem="rYC-Be-xMA" secondAttribute="leading" id="Qg8-hZ-Svj"/>
+                            <constraint firstItem="7Kr-vc-Kgk" firstAttribute="trailing" secondItem="rYC-Be-xMA" secondAttribute="trailing" id="h2o-rR-02G"/>
+                            <constraint firstAttribute="bottom" secondItem="7Kr-vc-Kgk" secondAttribute="bottom" id="ktK-eh-0kJ"/>
+                            <constraint firstItem="tXQ-a4-2OR" firstAttribute="centerY" secondItem="WyN-it-Obc" secondAttribute="centerY" id="lbk-oO-l0H"/>
+                            <constraint firstItem="tcn-2q-fxN" firstAttribute="top" secondItem="WyN-it-Obc" secondAttribute="top" id="w33-F7-a0W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rYC-Be-xMA"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginView" destination="tXQ-a4-2OR" id="IrR-aP-P2F"/>
+                        <outlet property="passwordTextField" destination="GZ6-O0-NOA" id="RQl-pa-IkT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iCk-0c-t1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1733" y="-701"/>
+        </scene>
+    </scenes>
+</document>
